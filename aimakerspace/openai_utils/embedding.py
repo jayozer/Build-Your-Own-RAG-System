@@ -4,9 +4,10 @@ from typing import List
 import os
 import asyncio
 
-
+#text-embedding-3-small	
+#text-embedding-ada-002
 class EmbeddingModel:
-    def __init__(self, embeddings_model_name: str = "text-embedding-ada-002"):
+    def __init__(self, embeddings_model_name: str = "text-embedding-3-small"):
         load_dotenv()
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
 
